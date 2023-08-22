@@ -1,3 +1,5 @@
+![alt text](./assets/banner.png "DayBook")
+
 # DayBook
 
 Esse aplicativo é semelhante ao programa Calendly(https://calendly.com/pt) onde você disponibiliza uma agenda para que outras pessoas possam marcar um horário com você.
