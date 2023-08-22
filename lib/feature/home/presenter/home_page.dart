@@ -1,7 +1,4 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_bloc/flutter_bloc.dart';
-
-import 'bloc/counter_bloc.dart';
 
 class HomePage extends StatefulWidget {
   const HomePage({super.key});
@@ -17,25 +14,9 @@ class _HomePageState extends State<HomePage> {
       appBar: AppBar(
         title: const Text('Daybook'),
       ),
-      body: Padding(
-        padding: const EdgeInsets.all(16.0),
-        child: BlocBuilder<CounterBloc, CounterState>(
-          builder: (context, state) {
-            return Column(
-              children: [
-                Text(state.value.toString()),
-                TextButton(
-                    onPressed: () =>
-                        context.read<CounterBloc>().add(IncrementEvent()),
-                    child: const Text('Increment')),
-                TextButton(
-                    onPressed: () =>
-                        context.read<CounterBloc>().add(DecrementEvent()),
-                    child: const Text('Decrement')),
-              ],
-            );
-          },
-        ),
+      body: const Padding(
+        padding: EdgeInsets.all(16.0),
+        child: Text('Bem vindo ao Daybook'),
       ),
     );
   }
